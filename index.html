@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thiago Machado — Desenvolvedor Back-end</title>
-
-  <meta name="description" content="Thiago Machado - Desenvolvedor Back-end Java com experiência em APIs, MySQL e sistemas em produção.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
-
+ 
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
-
-  <!-- NAV -->
+ 
   <nav id="nav">
     <div class="nav-logo">TM.dev</div>
     <ul class="nav-links">
@@ -30,40 +13,37 @@
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
-
+ 
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-grid-bg"></div>
-
+ 
     <div class="hero-left">
       <div class="hero-tag">Disponível para oportunidades</div>
-
       <h1>
         <span class="line-dim">Thiago</span><br>
         <span class="line-accent">Machado</span><br>
-        <span class="line-dim" style="font-size:0.55em;">
-          Desenvolvedor Back-end Java
-        </span>
+        <span class="line-dim" style="font-size:0.55em; letter-spacing:0.02em;">Desenvolvedor de Software</span>
       </h1>
-
       <p class="hero-desc">
-        Desenvolvedor Back-end com foco em Java e MySQL.<br>
-        Experiência prática com APIs, banco de dados e sistemas em produção.
+        Back-end Java · MySQL. Técnico de TI com 2 anos em ambiente de produção.
+        Estudante de Ciência da Computação — UNIFUCAMP.
       </p>
-
       <div class="hero-ctas">
         <a href="#projetos" class="btn-primary">Ver projetos</a>
         <a href="#contato" class="btn-secondary">Entrar em contato</a>
       </div>
     </div>
-
+ 
     <div class="hero-right">
       <div class="hero-visual">
         <div class="hero-photo-frame">
-          <img src="foto.jpg" alt="Foto de Thiago Machado">
+          <!-- Substitua o src pela sua foto: <img src="foto.jpg" alt="Thiago Machado"> -->
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a,#0a0a0a);display:flex;align-items:center;justify-content:center;">
+            <span style="font-family:'Space Mono',monospace;font-size:11px;color:#2a2a2a;letter-spacing:0.1em;">FOTO.JPG</span>
+          </div>
         </div>
         <div class="hero-photo-accent"></div>
-
         <div class="hero-badge">
           <span>2+</span>
           anos de experiência
@@ -71,128 +51,244 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- SOBRE -->
   <section id="sobre">
     <div class="section-label">01 — Sobre</div>
     <h2>Quem sou</h2>
-
     <div class="sobre-grid">
       <div class="sobre-text reveal">
         <p>
-          Desenvolvedor em formação com foco em <strong>Back-end Java e MySQL</strong>,
-          cursando Ciência da Computação (conclusão em 2026).
+          Desenvolvedor de software em formação com foco em <strong>back-end Java e MySQL</strong>,
+          atualmente cursando Bacharelado em Ciência da Computação na UNIFUCAMP
+          (conclusão: dez/2026).
         </p>
-
         <p>
-          Experiência profissional com suporte técnico, bancos de dados,
-          sistemas fiscais e ambientes de produção.
+          Trabalho como <strong>Técnico de TI na Zoom Tecnologias</strong> há mais de 2 anos,
+          onde atuo em suporte técnico, infraestrutura, processos fiscais,
+          manutenção e consulta em bancos de dados e backups em nuvem.
         </p>
-
         <p>
-          Objetivo de atuar integralmente como desenvolvedor,
-          construindo sistemas robustos e bem estruturados.
+          Meu objetivo é migrar integralmente para o desenvolvimento de software,
+          aplicando a base técnica sólida adquirida em ambiente profissional real
+          para construir sistemas robustos e bem estruturados.
         </p>
       </div>
-
       <div class="sobre-stats reveal">
-        <div class="stat">
-          <div class="stat-num">2+</div>
-          <div class="stat-label">Anos de experiência</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">4</div>
-          <div class="stat-label">Projetos no GitHub</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">2026</div>
-          <div class="stat-label">Graduação</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">1</div>
-          <div class="stat-label">Projeto real</div>
+        <div class="sobre-stats">
+          <div class="stat">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Anos de experiência profissional</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Projetos no GitHub</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2026</div>
+            <div class="stat-label">Conclusão da graduação</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Projeto entregue para cliente real</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
+ 
   <!-- STACK -->
   <section id="stack">
     <div class="section-label">02 — Stack</div>
     <h2>Tecnologias</h2>
-
     <div class="stack-grid reveal">
-      <div class="stack-item"><div class="stack-name">Java</div></div>
-      <div class="stack-item"><div class="stack-name">MySQL</div></div>
-      <div class="stack-item"><div class="stack-name">Python</div></div>
+      <div class="stack-item">
+        <div class="stack-icon">☕</div>
+        <div class="stack-name">Java</div>
+        <div class="stack-level"><div class="stack-level-fill" style="width:75%"></div></div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🗄️</div>
+        <div class="stack-name">MySQL</div>
+        <div class="stack-level"><div class="stack-level-fill" style="width:65%"></div></div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🐍</div>
+        <div class="stack-name">Python</div>
+        <div class="stack-level"><div class="stack-level-fill" style="width:55%"></div></div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🟣</div>
+        <div class="stack-name">Kotlin</div>
+        <div class="stack-level"><div class="stack-level-fill" style="width:40%"></div></div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🐘</div>
+        <div class="stack-name">PHP</div>
+        <div class="stack-level"><div class="stack-level-fill" style="width:40%"></div></div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🌐</div>
+        <div class="stack-name">HTML/CSS</div>
+        <div class="stack-level"><div class="stack-level-fill" style="width:50%"></div></div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">☁️</div>
+        <div class="stack-name">Cloud Backup</div>
+        <div class="stack-level"><div class="stack-level-fill" style="width:60%"></div></div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🖥️</div>
+        <div class="stack-name">Windows Server</div>
+        <div class="stack-level"><div class="stack-level-fill" style="width:70%"></div></div>
+      </div>
     </div>
   </section>
-
+ 
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia">
+    <div class="section-label">03 — Experiência</div>
+    <h2>Trajetória</h2>
+    <div class="timeline">
+ 
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Abr 2024 — Presente · 2 anos</div>
+        <div class="timeline-role">Técnico de TI</div>
+        <div class="timeline-company">Zoom Tecnologias · Coromandel, MG</div>
+        <div class="timeline-desc">
+          Suporte técnico presencial, diagnóstico e reparo de hardware, configuração de sistemas Windows e redes locais.
+          Atuação em processos fiscais com sistemas de gestão tributária. Manutenção e consulta em bancos de dados internos.
+          Gerenciamento de backups em nuvem para dados críticos da empresa.
+        </div>
+        <div class="timeline-tags">
+          <span class="tag">Suporte técnico</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Cloud Backup</span>
+          <span class="tag">Fiscal</span>
+          <span class="tag">Redes</span>
+        </div>
+      </div>
+ 
+      <div class="timeline-item">
+        <div class="timeline-dot" style="background:var(--muted)"></div>
+        <div class="timeline-date">Mai 2023 — Out 2024 · 1 ano e 6 meses</div>
+        <div class="timeline-role">Auxiliar de Cartório</div>
+        <div class="timeline-company">Cartório de Registro Civil 1º Ofício · Coromandel, MG</div>
+        <div class="timeline-desc">
+          Digitalização e indexação de documentos jurídicos em volume. Entrada estruturada de dados em sistemas de gestão documental,
+          desenvolvendo atenção a integridade e consistência de dados.
+        </div>
+        <div class="timeline-tags">
+          <span class="tag">Entrada de dados</span>
+          <span class="tag">Gestão documental</span>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
   <!-- PROJETOS -->
   <section id="projetos">
-    <div class="section-label">03 — Projetos</div>
-    <h2>Projetos</h2>
-
+    <div class="section-label">04 — Projetos</div>
+    <h2>O que construí</h2>
     <div class="projects-grid reveal">
-
+ 
       <a href="https://github.com/Gordiu/quiz-sicoob" target="_blank" class="project-card">
+        <div class="project-num">001</div>
         <div class="project-name">Quiz Sicoob</div>
         <div class="project-desc">
-          Sistema com lógica de premiação utilizado em ambiente real.
-          Modelagem de banco e regras de negócio.
+          Sistema de perguntas e premiação desenvolvido para o banco Sicoob.
+          Primeiro projeto entregue para cliente real — modelagem de banco de dados e lógica de negócio.
+        </div>
+        <div class="project-stack">
+          <span class="project-tag">Java</span>
+          <span class="project-tag">MySQL</span>
         </div>
       </a>
-
+ 
+      <a href="https://github.com/Gordiu/Melhoramento-Iterativo-Java" target="_blank" class="project-card">
+        <div class="project-num">002</div>
+        <div class="project-name">N-Rainhas SA</div>
+        <div class="project-desc">
+          Solução para o problema das N-Rainhas via Simulated Annealing com representação por permutação
+          e cálculo O(1) de delta por iteração.
+        </div>
+        <div class="project-stack">
+          <span class="project-tag">Java</span>
+          <span class="project-tag">IA</span>
+          <span class="project-tag">Algoritmos</span>
+        </div>
+      </a>
+ 
+      <a href="https://github.com/Gordiu/ElizaBot-and-NGrams" target="_blank" class="project-card">
+        <div class="project-num">003</div>
+        <div class="project-name">ElizaBot + N-Grams</div>
+        <div class="project-desc">
+          Chatbot baseado no clássico ELIZA com reconhecimento de padrões via regex e reflexão linguística.
+          Módulo educacional de N-Grams em Python.
+        </div>
+        <div class="project-stack">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">Regex</span>
+        </div>
+      </a>
+ 
       <a href="https://github.com/Gordiu/Spells" target="_blank" class="project-card">
+        <div class="project-num">004</div>
         <div class="project-name">Spells</div>
         <div class="project-desc">
-          Aplicação Android com API REST própria.
+          App Android com API REST própria. Projeto semestral com arquitetura cliente-servidor,
+          back-end em PHP e front-end mobile em Kotlin.
+        </div>
+        <div class="project-stack">
+          <span class="project-tag">Kotlin</span>
+          <span class="project-tag">Android</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">REST API</span>
         </div>
       </a>
-
+ 
     </div>
   </section>
-
+ 
   <!-- CONTATO -->
   <section id="contato">
-    <div class="section-label">04 — Contato</div>
-    <h2>Contato</h2>
-
+    <div class="section-label">05 — Contato</div>
+    <h2>Vamos conversar</h2>
     <div class="contato-inner">
-
-      <div>
-        <p>Aberto a oportunidades como desenvolvedor júnior.</p>
-
+      <div class="contato-text reveal">
+        <p>
+          Estou buscando oportunidades como desenvolvedor júnior ou estagiário em software.
+          Se tiver uma vaga ou quiser trocar uma ideia, é só entrar em contato.
+        </p>
         <div class="contato-email-big">
-          thiagormachado2020@gmail.com
+          <!-- Substitua pelo seu e-mail -->
+          seuemail@gmail.com
         </div>
       </div>
-
-      <div class="contato-links">
-
-        <a href="www.linkedin.com/in/thiagomachado-dev" target="_blank" class="contato-link">
-          <span>LinkedIn</span>
+      <div class="contato-links reveal">
+        <a href="https://linkedin.com/in/thiagomachado-dev" target="_blank" class="contato-link">
+          <span class="contato-link-label">LinkedIn</span>
+          <span class="contato-link-value">thiagomachado-dev</span>
+          <span class="contato-link-arrow">↗</span>
         </a>
-
         <a href="https://github.com/Gordiu" target="_blank" class="contato-link">
-          <span>GitHub</span>
+          <span class="contato-link-label">GitHub</span>
+          <span class="contato-link-value">github.com/Gordiu</span>
+          <span class="contato-link-arrow">↗</span>
         </a>
-
-        <a href="mailto:thiagormachado2020@gmail.com" class="contato-link">
-          <span>E-mail</span>
+        <a href="mailto:seuemail@gmail.com" class="contato-link">
+          <span class="contato-link-label">E-mail</span>
+          <span class="contato-link-value">seuemail@gmail.com</span>
+          <span class="contato-link-arrow">↗</span>
         </a>
-
       </div>
-
     </div>
   </section>
-
+ 
   <footer>
-    <span>© 2025 Thiago Machado</span>
+    <span class="footer-copy">© 2025 Thiago Machado</span>
+    <a href="#home" class="footer-back">↑ Voltar ao topo</a>
   </footer>
-
-  <!-- JS -->
-  <script src="script.js"></script>
-
-</body>
-</html>
