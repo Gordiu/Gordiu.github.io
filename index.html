@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thiago Machado — Desenvolvedor</title>
+  <title>Thiago Machado — Desenvolvedor de Software</title>
 
-  <!-- FONTES -->
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- CSS EXTERNO -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-  <!-- CURSOR -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAV -->
   <nav id="nav">
     <div class="nav-logo">TM.dev</div>
-
     <ul class="nav-links">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#stack">Stack</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
@@ -33,7 +31,6 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-
     <div class="hero-grid-bg"></div>
 
     <div class="hero-left">
@@ -42,11 +39,11 @@
       <h1>
         <span class="line-dim">Thiago</span><br>
         <span class="line-accent">Machado</span><br>
-        <span class="line-dim" style="font-size:0.6em;">Desenvolvedor de Software</span>
+        <span class="line-dim small">Desenvolvedor de Software</span>
       </h1>
 
       <p class="hero-desc">
-        Back-end Java · MySQL. Técnico de TI com 2 anos em produção.
+        Back-end Java · MySQL. Técnico de TI com 2 anos em ambiente de produção.
         Estudante de Ciência da Computação.
       </p>
 
@@ -59,11 +56,17 @@
     <div class="hero-right">
       <div class="hero-visual">
         <div class="hero-photo-frame">
+          <!-- FOTO REAL -->
           <img src="./FOTO.JPG" alt="Thiago Machado">
+        </div>
+        <div class="hero-photo-accent"></div>
+
+        <div class="hero-badge">
+          <span>2+</span>
+          anos de experiência
         </div>
       </div>
     </div>
-
   </section>
 
   <!-- SOBRE -->
@@ -72,24 +75,34 @@
     <h2>Quem sou</h2>
 
     <div class="sobre-grid">
-
-      <div class="sobre-text">
+      <div class="sobre-text reveal">
         <p>
-          Desenvolvedor em formação com foco em <strong>Java e MySQL</strong>.
+          Desenvolvedor com foco em <strong>Java e MySQL</strong>.
         </p>
         <p>
           Experiência prática como Técnico de TI atuando com suporte,
-          infraestrutura e banco de dados.
+          banco de dados e infraestrutura.
         </p>
       </div>
 
-      <div class="sobre-stats">
-        <div class="stat">2+ anos experiência</div>
-        <div class="stat">4 projetos</div>
-        <div class="stat">Graduação 2026</div>
-        <div class="stat">1 cliente real</div>
+      <div class="sobre-stats reveal">
+        <div class="stat">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Anos experiência</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Projetos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2026</div>
+          <div class="stat-label">Graduação</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Projeto real</div>
+        </div>
       </div>
-
     </div>
   </section>
 
@@ -98,13 +111,10 @@
     <div class="section-label">02 — Stack</div>
     <h2>Tecnologias</h2>
 
-    <div class="projects-grid">
-
-      <div class="project-card">Java</div>
-      <div class="project-card">MySQL</div>
-      <div class="project-card">Python</div>
-      <div class="project-card">Kotlin</div>
-
+    <div class="stack-grid reveal">
+      <div class="stack-item"><div class="stack-name">Java</div></div>
+      <div class="stack-item"><div class="stack-name">MySQL</div></div>
+      <div class="stack-item"><div class="stack-name">Python</div></div>
     </div>
   </section>
 
@@ -113,23 +123,16 @@
     <div class="section-label">03 — Projetos</div>
     <h2>Projetos</h2>
 
-    <div class="projects-grid">
-
+    <div class="projects-grid reveal">
       <a href="https://github.com/Gordiu/quiz-sicoob" target="_blank" class="project-card">
-        <strong>Quiz Sicoob</strong>
-        <p>Sistema com banco de dados e lógica de premiação.</p>
+        <div class="project-name">Quiz Sicoob</div>
+        <div class="project-desc">Sistema com banco de dados.</div>
       </a>
 
       <a href="https://github.com/Gordiu/Melhoramento-Iterativo-Java" target="_blank" class="project-card">
-        <strong>N-Rainhas (Simulated Annealing)</strong>
-        <p>Algoritmo heurístico otimizado.</p>
+        <div class="project-name">N-Rainhas</div>
+        <div class="project-desc">Algoritmo heurístico.</div>
       </a>
-
-      <a href="https://github.com/Gordiu/ElizaBot-and-NGrams" target="_blank" class="project-card">
-        <strong>ElizaBot + N-Grams</strong>
-        <p>Chatbot com regex e NLP.</p>
-      </a>
-
     </div>
   </section>
 
@@ -138,25 +141,17 @@
     <div class="section-label">04 — Contato</div>
     <h2>Contato</h2>
 
-    <div class="projects-grid">
-
-      <a href="https://github.com/Gordiu" target="_blank" class="project-card">
-        GitHub
-      </a>
-
-      <a href="https://linkedin.com" target="_blank" class="project-card">
-        LinkedIn
-      </a>
-
+    <div class="contato-links">
+      <a href="https://github.com/Gordiu" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    © 2026 Thiago Machado
+    <span>© 2026 Thiago Machado</span>
   </footer>
 
-  <!-- JS -->
+  <!-- JS EXTERNO -->
   <script src="./script.js"></script>
 
 </body>
