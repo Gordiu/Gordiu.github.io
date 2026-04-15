@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thiago Machado — Desenvolvedor de Software</title>
-
+  
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- CSS EXTERNO -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-
+  <!-- CURSOR PERSONALIZADO -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <nav id="nav">
+  <!-- NAVEGAÇÃO -->
+  <nav id="nav" class="nav">
     <div class="nav-logo">TM.dev</div>
     <ul class="nav-links">
       <li><a href="#sobre">Sobre</a></li>
@@ -29,14 +31,14 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section class="hero" id="home">
     <div class="hero-grid-bg"></div>
 
     <div class="hero-left">
       <div class="hero-tag">Disponível para oportunidades</div>
 
-      <h1>
+      <h1 class="hero-title">
         <span class="line-dim">Thiago</span><br>
         <span class="line-accent">Machado</span><br>
         <span class="line-dim small">Desenvolvedor de Software</span>
@@ -48,7 +50,7 @@
       </p>
 
       <div class="hero-ctas">
-        <a href="#projetos" class="btn-primary">Ver projetos</a>
+        <a href="#projetos" class="btn-primary">Ver projetos →</a>
         <a href="#contato" class="btn-secondary">Contato</a>
       </div>
     </div>
@@ -56,8 +58,7 @@
     <div class="hero-right">
       <div class="hero-visual">
         <div class="hero-photo-frame">
-          <!-- FOTO REAL -->
-          <img src="./FOTO.JPG" alt="Thiago Machado">
+          <div class="hero-photo-placeholder">TM</div>
         </div>
         <div class="hero-photo-accent"></div>
 
@@ -69,8 +70,8 @@
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section id="sobre">
+  <!-- SOBRE SECTION -->
+  <section id="sobre" class="section">
     <div class="section-label">01 — Sobre</div>
     <h2>Quem sou</h2>
 
@@ -80,8 +81,10 @@
           Desenvolvedor com foco em <strong>Java e MySQL</strong>.
         </p>
         <p>
-          Experiência prática como Técnico de TI atuando com suporte,
-          banco de dados e infraestrutura.
+          Experiência prática como Técnico de TI atuando com suporte, banco de dados e infraestrutura.
+        </p>
+        <p>
+          Apaixonado por resolver problemas complexos e criar soluções escaláveis. Sempre buscando aprender novas tecnologias e metodologias.
         </p>
       </div>
 
@@ -106,53 +109,142 @@
     </div>
   </section>
 
-  <!-- STACK -->
-  <section id="stack">
+  <!-- STACK SECTION -->
+  <section id="stack" class="section">
     <div class="section-label">02 — Stack</div>
     <h2>Tecnologias</h2>
 
     <div class="stack-grid reveal">
-      <div class="stack-item"><div class="stack-name">Java</div></div>
-      <div class="stack-item"><div class="stack-name">MySQL</div></div>
-      <div class="stack-item"><div class="stack-name">Python</div></div>
+      <div class="stack-item">
+        <div class="stack-icon">☕</div>
+        <div class="stack-name">Java</div>
+        <div class="stack-desc">Back-end e aplicações desktop</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🗄️</div>
+        <div class="stack-name">MySQL</div>
+        <div class="stack-desc">Banco de dados relacional</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🐍</div>
+        <div class="stack-name">Python</div>
+        <div class="stack-desc">Automação e scripts</div>
+      </div>
+      <div class="stack-item">
+        <div class="stack-icon">🔧</div>
+        <div class="stack-name">Git</div>
+        <div class="stack-desc">Controle de versão</div>
+      </div>
     </div>
   </section>
 
-  <!-- PROJETOS -->
-  <section id="projetos">
-    <div class="section-label">03 — Projetos</div>
-    <h2>Projetos</h2>
+  <!-- EXPERIÊNCIA SECTION -->
+  <section id="experiencia" class="section">
+    <div class="section-label">03 — Experiência</div>
+    <h2>Trajetória</h2>
+
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Técnico de TI</h3>
+          <p class="timeline-period">2022 - Presente (2+ anos)</p>
+          <p>
+            Atuação em ambiente de produção com suporte técnico, gestão de banco de dados e infraestrutura. Desenvolvimento de soluções para otimizar processos.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Estudante de Ciência da Computação</h3>
+          <p class="timeline-period">2024 - 2026 (Conclusão prevista)</p>
+          <p>
+            Formação acadêmica focada em algoritmos, estruturas de dados, engenharia de software e desenvolvimento de aplicações.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS SECTION -->
+  <section id="projetos" class="section">
+    <div class="section-label">04 — Projetos</div>
+    <h2>Trabalhos Recentes</h2>
 
     <div class="projects-grid reveal">
       <a href="https://github.com/Gordiu/quiz-sicoob" target="_blank" class="project-card">
-        <div class="project-name">Quiz Sicoob</div>
-        <div class="project-desc">Sistema com banco de dados.</div>
+        <div class="project-header">
+          <div class="project-icon">📝</div>
+          <div class="project-name">Quiz Sicoob</div>
+        </div>
+        <div class="project-desc">
+          Sistema interativo de quiz com banco de dados integrado. Desenvolvido em Java com MySQL para gerenciamento de perguntas e respostas.
+        </div>
+        <div class="project-tech">
+          <span>Java</span>
+          <span>MySQL</span>
+          <span>Database</span>
+        </div>
+        <div class="project-link">
+          Ver no GitHub →
+        </div>
       </a>
 
       <a href="https://github.com/Gordiu/Melhoramento-Iterativo-Java" target="_blank" class="project-card">
-        <div class="project-name">N-Rainhas</div>
-        <div class="project-desc">Algoritmo heurístico.</div>
+        <div class="project-header">
+          <div class="project-icon">♛</div>
+          <div class="project-name">N-Rainhas</div>
+        </div>
+        <div class="project-desc">
+          Implementação do algoritmo N-Rainhas com otimizações heurísticas. Demonstra conhecimento em algoritmos complexos e otimização.
+        </div>
+        <div class="project-tech">
+          <span>Java</span>
+          <span>Algoritmos</span>
+          <span>Heurística</span>
+        </div>
+        <div class="project-link">
+          Ver no GitHub →
+        </div>
       </a>
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section id="contato">
-    <div class="section-label">04 — Contato</div>
-    <h2>Contato</h2>
+  <!-- CONTATO SECTION -->
+  <section id="contato" class="section section-contact">
+    <div class="section-label">05 — Contato</div>
+    <h2>Vamos conversar?</h2>
 
-    <div class="contato-links">
-      <a href="https://github.com/Gordiu" target="_blank">GitHub</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <div class="contato-text reveal">
+      <p>
+        Estou aberto a oportunidades, parcerias e conversas sobre tecnologia. Sinta-se à vontade para entrar em contato!
+      </p>
+    </div>
+
+    <div class="contato-links reveal">
+      <a href="https://github.com/Gordiu" target="_blank" class="contact-link">
+        <span>🐙</span>
+        <span>GitHub</span>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="contact-link">
+        <span>💼</span>
+        <span>LinkedIn</span>
+      </a>
+      <a href="mailto:thiago@example.com" class="contact-link">
+        <span>✉️</span>
+        <span>Email</span>
+      </a>
     </div>
   </section>
 
-  <footer>
-    <span>© 2026 Thiago Machado</span>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2026 Thiago Machado. Desenvolvedor de Software.</span>
   </footer>
 
-  <!-- JS EXTERNO -->
+  <!-- JAVASCRIPT -->
   <script src="./script.js"></script>
-
 </body>
 </html>
