@@ -560,14 +560,15 @@ h2 {
   line-height: 1.7;
 }
 
-/* ============================================
-   PROJETOS SECTION
-   ============================================ */
+/* ========================= */
+/* PROJETOS 
+/* ========================= */
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 24px;
+  align-items: stretch; /* garante mesma altura */
 }
 
 .project-card {
@@ -578,8 +579,12 @@ h2 {
   transition: all 0.3s ease;
   text-decoration: none;
   color: inherit;
+
   display: flex;
   flex-direction: column;
+  height: 100%;
+  min-height: 240px;
+
   position: relative;
   overflow: hidden;
 }
@@ -589,8 +594,8 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   height: 3px;
+  width: 100%;
   background: linear-gradient(90deg, var(--accent), transparent);
   transform: scaleX(0);
   transform-origin: left;
@@ -615,29 +620,31 @@ h2 {
   margin-bottom: 16px;
 }
 
-.project-icon {
-  font-size: 24px;
-}
-
 .project-name {
   font-family: var(--mono);
   font-size: 16px;
   font-weight: 700;
-  color: var(--text);
 }
 
+/* 🔥 CORREÇÃO PRINCIPAL */
 .project-desc {
   color: var(--text-dim);
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 16px;
-  flex-grow: 1;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* limita linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  flex-grow: 1; /* empurra o resto pra baixo */
 }
 
 .project-tech {
   display: flex;
-  gap: 8px;
   flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 16px;
 }
 
@@ -648,20 +655,14 @@ h2 {
   color: var(--accent);
   padding: 4px 8px;
   border-radius: 4px;
-  letter-spacing: 0.05em;
 }
 
 .project-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  margin-top: auto; /* fixa no final */
   font-family: var(--mono);
   font-size: 12px;
   color: var(--accent);
-  font-weight: 600;
-  letter-spacing: 0.05em;
 }
-
 /* ============================================
    CONTATO SECTION
    ============================================ */
